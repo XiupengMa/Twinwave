@@ -1,6 +1,6 @@
 # Twinwave App Store release
 
-Status: signed universal archive prepared; not yet uploaded, submitted, approved, or released.
+Status as of November 16, 2026: version 1.3.2 (16) is uploaded and submitted to Apple, with status Waiting for Review. Automatic release after approval is enabled; the app is not yet approved or available for sale.
 
 - Title: Twinwave
 - Subtitle: Your Mac audio at a glance
@@ -29,9 +29,9 @@ See your Mac’s input and output levels in a small, native audio panel. Expand 
 
 Microphone and system-audio permission are required for metering. The microphone meter measures while another audio client is using the selected input. Twinwave shows levels; it does not save recordings or enhance audio.
 
-## Required verification
+## Release verification
 
 - Build and archive with App Sandbox and distribution signing.
 - Verify system-output metering, microphone activity and peaks, and device switching in the sandboxed build; restore original devices afterward.
 - Verify permission denial/retry, quit/relaunch, panel dragging, menus, and placement persistence.
-- Complete public support/privacy URLs, screenshots, age rating, privacy declaration, pricing, review contact, and tester validation before submission.
+- Public support/privacy URLs, two store screenshots, age rating, Data Not Collected privacy label, pricing, and review contact are configured. Remaining hardware and runtime verification limits are documented in [SECURITY_REVIEW.md](SECURITY_REVIEW.md).

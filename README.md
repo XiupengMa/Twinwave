@@ -33,7 +33,7 @@ Every quarter second, Twinwave checks other Core Audio processes for active inpu
 
 The shared **Twinwave App Store** Xcode scheme uses App Sandbox and builds a universal app. Copy `Configuration/Local.xcconfig.example` to `Configuration/Local.xcconfig` and enter your own enrolled developer team. Do not commit signing configuration, certificates, or provisioning profiles.
 
-The store release is being prepared; a source build is not an approved App Store release. See [release preparation](docs/APP_STORE.md).
+Version 1.3.2 (16) was submitted to Apple on November 16, 2026 and is waiting for review; a source build is not an approved App Store release. See [release preparation](docs/APP_STORE.md).
 
 ## Tests and privacy
 
