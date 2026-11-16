@@ -2,6 +2,18 @@
 
 Twinwave is a small native audio panel for Macs running macOS 14.2 or later. The local build script targets Apple silicon; the App Store Xcode scheme builds for Apple silicon and Intel. The top row follows the default input. While the selected mic is idle, twelve stationary dots mark the baseline. When another process uses that mic, an inset mint or dark teal highlight appears behind the input controls, even during silence. After the last other client releases the mic, Twinwave closes its input stream and clears its peak history. The bottom row follows the default output. Each meter shows the last twelve peak measurements, with the newest on the right.
 
+## Screenshots
+
+Light and dark appearances, plus the output picker and placement menu. These views are rendered from Twinwave’s native UI; the highlighted microphone uses a sample active-input state.
+
+| Light appearance | Dark appearance |
+| --- | --- |
+| ![Twinwave light panel with microphone activity highlight](docs/images/panel-light.png) | ![Twinwave dark panel with microphone activity highlight](docs/images/panel-dark.png) |
+
+| Choose an output | Place the panel |
+| --- | --- |
+| ![Twinwave output menu showing available audio devices](docs/images/output-picker.png) | ![Twinwave menu with corner placement and audio retry controls](docs/images/placement-menu.png) |
+
 ## Build and run
 
 With Apple's Command Line Tools or Xcode and the macOS 14.2 SDK or newer installed, run `./build.sh` in this directory. The optimized, ad-hoc signed app is written to `build/Twinwave.app`. Set `SIGN_IDENTITY` to use a local signing certificate instead. Copy the app to Applications and open it.
